@@ -1,16 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RandomGenerator.MainPage">
+<ContentPage
+    x:Class="RandomGenerator.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-        <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*,*,*,*" >
-        <Frame Grid.ColumnSpan="3" Grid.RowSpan="1" BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Randomizer" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+    <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*,*,*,*">
+        <Frame
+            Grid.RowSpan="1"
+            Grid.ColumnSpan="3"
+            Padding="24"
+            BackgroundColor="#2196F3"
+            CornerRadius="0">
+            <Label
+                FontSize="36"
+                HorizontalTextAlignment="Center"
+                Text="Randomizer"
+                TextColor="White" />
         </Frame>
-        <ListView x:Name="classMemberList" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3" RowHeight="22"  BackgroundColor="Azure" ></ListView>
-        <Button x:Name="btnRandomize" Clicked="btnRandomize_Clicked" BackgroundColor="#2196F3" TextColor="White" FontSize="30" Margin="15,0"  ScaleY=".7" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4" Text="Randomize" CornerRadius="10"></Button>
-        <Label x:Name="printRandomName" Grid.Row="5" Grid.ColumnSpan="2" Margin="15,0" Text="And the lucky winner is...."></Label>
-        </Grid>
-    
+        <ListView
+            x:Name="classMemberList"
+            Grid.Row="1"
+            Grid.RowSpan="3"
+            Grid.ColumnSpan="3"
+            BackgroundColor="Azure"
+            RowHeight="22" />
+        <Button
+            x:Name="btnRandomize"
+            Grid.Row="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Margin="15,0"
+            BackgroundColor="#2196F3"
+            Clicked="btnRandomize_Clicked"
+            CornerRadius="10"
+            FontSize="30"
+            ScaleY=".7"
+            Text="Randomize"
+            TextColor="White" />
+        <Label
+            x:Name="printRandomName"
+            Grid.Row="5"
+            Grid.ColumnSpan="3"
+            Margin="15,0"
+            Text="And the lucky winner is...." />
+    </Grid>
+
 
 </ContentPage>
