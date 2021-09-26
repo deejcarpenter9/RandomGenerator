@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RandomGenerator.MainPage">
+
+        <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*,*,*,*" >
+        <Frame Grid.ColumnSpan="3" Grid.RowSpan="1" BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Randomizer" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <ListView x:Name="classMemberList" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3" RowHeight="22"  BackgroundColor="Azure" ></ListView>
+        <Button Clicked="btnRandomize_Clicked" ScaleY=".7" FontSize="Large" x:Name="btnRandomize" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4" Text="Randomize" CornerRadius="10"></Button>
+        <Label x:Name="printRandomName" Text="And the lucky winner is...."></Label>
+        </Grid>
+    
+
+</ContentPage>
