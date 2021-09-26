@@ -8,8 +8,8 @@
             <Label Text="Randomizer" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <ListView x:Name="classMemberList" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3" RowHeight="22"  BackgroundColor="Azure" ></ListView>
-        <Button Clicked="btnRandomize_Clicked" ScaleY=".7" FontSize="Large" x:Name="btnRandomize" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4" Text="Randomize" CornerRadius="10"></Button>
-        <Label x:Name="printRandomName" Text="And the lucky winner is...."></Label>
+        <Button x:Name="btnRandomize" Clicked="btnRandomize_Clicked" BackgroundColor="#2196F3" TextColor="White" FontSize="30" Margin="15,0"  ScaleY=".7" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4" Text="Randomize" CornerRadius="10"></Button>
+        <Label x:Name="printRandomName" Grid.Row="5" Grid.ColumnSpan="2" Margin="15,0" Text="And the lucky winner is...."></Label>
         </Grid>
     
 
