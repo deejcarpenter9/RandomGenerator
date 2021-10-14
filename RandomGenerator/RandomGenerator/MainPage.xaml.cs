@@ -16,30 +16,17 @@ namespace RandomGenerator
             ClassMembers();
         }
 
+        
         public string ClassMembers()
         {
-            string[] classMembers = new string[14]; // string[] classMembers = new string[] { Billy, Dennis, Josh, Lumiere, Michael, Joe, Jay, Austin, Dan, Erick, Wynn, Scott, Torrie, Yohan }
-            classMembers[0] = "Billy";
-            classMembers[1] = "Dennis";
-            classMembers[2] = "Josh";
-            classMembers[3] = "Lumiere";
-            classMembers[4] = "Michael";
-            classMembers[5] = "Joe";
-            classMembers[6] = "Jay";
-            classMembers[7] = "Austin";
-            classMembers[8] = "Nguyen";
-            classMembers[9] = "Erick";
-            classMembers[10] = "Dan";
-            classMembers[11] = "Scott";
-            classMembers[12] = "Torrie";
-            classMembers[13] = "Yohan";
+            string[] classMembers = new string[14] { "Billy", "Dennis", "Josh", "Lumiere", "Michael", "Joe", "Jay", "Austin", "Dan", "Erick", "Wynn", "Scott", "Torrie", "Yohan" };
             //binds ^ above array list to the listview display
             classMemberList.ItemsSource = classMembers;
 
             Random rand = new Random();
             int index = rand.Next(classMembers.Length);
             return classMembers[index];
-            //printRandomName.Text = classMembers[index];
+            
         }
        
 

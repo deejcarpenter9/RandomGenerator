@@ -21,9 +21,11 @@
             x:Name="classMemberList"
             Grid.Row="1"
             Grid.RowSpan="3"
-            Grid.ColumnSpan="3"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"            
             BackgroundColor="Azure"
-            RowHeight="22" />
+            RowHeight="22" 
+             />
         <Button
             x:Name="btnRandomize"
             Grid.Row="4"
@@ -42,6 +44,8 @@
             Grid.Row="5"
             Grid.ColumnSpan="3"
             Margin="15,0"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
             Text="And the lucky winner is...." />
     </Grid>
 
