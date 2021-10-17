@@ -45,6 +45,7 @@
             Grid.ColumnSpan="3"
             Margin="15,0"
             HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
             FontSize="20"
             Text="And the lucky winner is...." />
     </Grid>
